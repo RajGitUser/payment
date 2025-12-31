@@ -7,7 +7,7 @@ def configMap = [
 
 // if branch is not equal to main, then run CI pipeline
 if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
-    pythonEKSPipeline(configMap)
+    pythonEKSpipeline(configMap)
 }
 else {
     echo "Please proceed with PROD process"
